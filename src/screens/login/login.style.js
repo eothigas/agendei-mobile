@@ -10,6 +10,7 @@ export const styles = {
     },
 
     containerLogo: {
+        marginTop: 40,
         alignItems: "center"
     },
 

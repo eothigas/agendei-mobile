@@ -6,7 +6,7 @@ const colors = {
     gray2: "#717f7f",
     gray3: "#a0a0a0",
     gray4: "#F4F4F4",
-    gray5: "#f1f5f4"
+    gray5: "#F1F5F4"
 }
 const font_size = {
     xsm: 11,
