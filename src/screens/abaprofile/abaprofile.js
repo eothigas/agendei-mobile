@@ -10,7 +10,7 @@ export const styles = {
 
     item: {
         borderWidth: 1,
-        boderColor: colors.gray4,
+        borderColor: colors.gray4,
         paddingLeft: 8,
         paddingTop: 15,
         paddingBottom: 15,
