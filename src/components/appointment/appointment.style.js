@@ -1,36 +1,36 @@
-import { colors, font_size } from "../../constants/theme.js";
+import { COLORS, FONT_SIZE } from "../../constants/theme.js";
 
 export const styles = {
     appointment: {
         flex: 1,
-        backgroundColor: colors.white,
+        backgroundColor: COLORS.white,
         padding: 12,
         borderWidth: 1,
-        borderColor: colors.gray4
+        borderColor: COLORS.gray4
     },
     name: {
-        fontSize: font_size.md,
-        color: colors.gray1,
+        fontSize: FONT_SIZE.md,
+        color: COLORS.gray1,
         marginBottom: 2
     },
-    speciality: {
-        fontSize: font_size.sm,
-        color: colors.gray3,
+    specialty: {
+        fontSize: FONT_SIZE.sm,
+        color: COLORS.gray3,
         marginBottom: 4
     },
     icon: {
         width: 25,
         height: 25,
-        marginRight: 4
+        marginRight: 5
     },
     bookingDate: {
-        fontSize: font_size.sm,
-        color: colors.gray3,
+        fontSize: FONT_SIZE.sm,
+        color: COLORS.gray3,
         marginTop: 3
     },
     bookingHour: {
-        fontSize: font_size.sm,
-        color: colors.gray3,
+        fontSize: FONT_SIZE.sm,
+        color: COLORS.gray3,
         marginTop: 3
     },
     booking: {

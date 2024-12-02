@@ -1,39 +1,34 @@
-import {colors, font_size} from "../../constants/theme.js";
+import { COLORS, FONT_SIZE } from "../../constants/theme.js";
 
 export const styles = {
-
     container: {
-        backgroundColor: colors.white,
+        backgroundColor: COLORS.white,
         flex: 1,
         padding: 50,
         justifyContent: "space-between"
     },
-
     containerLogo: {
-        marginTop: 40,
         alignItems: "center"
     },
-
     logo: {
-        width: 200,
-        height: 46,
+        width: 100,
+        height: 23
     },
-
-    input: {
-        backgroundColor: colors.gray5,
-        padding: 10,
-        borderRadius: 6,
+    containerInput: {
         marginBottom: 15
     },
-
-    footer: {
-        flexDirection: "row",
-        justifyContent: 'center',
-        fontSize: font_size.lg
+    input: {
+        backgroundColor: COLORS.gray5,
+        padding: 10,
+        borderRadius: 6
     },
-
+    footer: {
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "row"
+    },
     footerLink: {
-        fontSize: font_size.lg,
-        color: colors.blue,
+        color: COLORS.blue
     }
+
 }

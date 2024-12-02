@@ -1,34 +1,28 @@
-import {colors, font_size} from "../../constants/theme.js";
+import { COLORS, FONT_SIZE } from "../../constants/theme.js";
 
 export const styles = {
-
     service: {
-        backgroundColor: colors.white,
         flex: 1,
+        backgroundColor: COLORS.white,
         flexDirection: "row",
         padding: 12,
         borderWidth: 1,
-        borderColor: colors.gray4,
+        borderColor: COLORS.gray4
     },
-
     containerText: {
-        flex: 1,
+        flex: 1
     },
-
     containerButton: {
-        marginTop: 5,
+        marginTop: 5
     },
-
     description: {
-        fontSize: font_size.md,
-        color: colors.gray3,
-        fontWeight: "bold",
-        marginTop: 5,
+        fontSize: FONT_SIZE.md,
+        color: COLORS.gray3,
+        marginTop: 5
     },
-
     price: {
-        fontSize: font_size.sm,
-        color: colors.blue,
-        marginTop: 3,
+        fontSize: FONT_SIZE.sm,
+        color: COLORS.blue,
+        marginTop: 3
     }
 }

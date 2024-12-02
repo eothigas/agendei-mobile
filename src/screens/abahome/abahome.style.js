@@ -1,17 +1,15 @@
-import {colors, font_size} from "../../constants/theme.js";
+import { COLORS, FONT_SIZE } from "../../constants/theme.js";
 
 export const styles = {
-
     container: {
-        backgroundColor: colors.white,
+        backgroundColor: COLORS.white,
         flex: 1,
-        padding: 12,
+        padding: 12
     },
-
     text: {
-        fontSize: font_size.lg,
-        color: colors.gray1,
-        marginBottom: 20,
-        marginLeft: 20,
+        fontSize: FONT_SIZE.md,
+        color: COLORS.gray1,
+        marginBottom: 15,
+        marginLeft: 10
     }
 }

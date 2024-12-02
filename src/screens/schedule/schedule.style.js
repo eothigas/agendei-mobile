@@ -1,28 +1,24 @@
-import {colors, font_size} from "../../constants/theme.js";
+import { COLORS, FONT_SIZE } from "../../constants/theme.js";
 
 export const styles = {
-
     container: {
-        backgroundColor: colors.white,
         flex: 1,
+        backgroundColor: COLORS.white,
         paddingLeft: 20,
         paddingRight: 20,
-        paddingTop: 20,
-        marginBottom: 20,
         justifyContent: "space-between",
+        marginBottom: 20
     },
-
     theme: {
-        todayTextColor: colors.red,
-        selectedDayBackgroundColor: colors.blue,
-        selectedDayTextColor: colors.white,
-        arrowColor: colors.blue,
+        todayTextColor: COLORS.red,
+        selectedDayBackgroundColor: COLORS.blue,
+        selectedDayTextColor: COLORS.white,
+        arrowColor: COLORS.blue
     },
-
     textHour: {
-        fontSize: font_size.lg,
+        fontSize: FONT_SIZE.lg,
         fontWeight: "bold",
-        color: colors.gray2,
-        marginTop: 20,
+        color: COLORS.gray2,
+        marginTop: 20
     }
 }
