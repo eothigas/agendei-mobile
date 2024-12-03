@@ -18,7 +18,7 @@ export const styles = {
         fontWeight: "bold",
         marginTop: 5
     },
-    specialty: {
+    speciality: {
         fontSize: FONT_SIZE.sm,
         color: COLORS.white,
         marginTop: 3

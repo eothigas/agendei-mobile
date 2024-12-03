@@ -41,7 +41,7 @@ function Login(props) {
 
         <View>
             <View style={styles.containerInput}>
-                <TextInput placeholder="E-mail" style={styles.input}
+                <TextInput placeholder="Email" style={styles.input}
                     onChangeText={(texto) => setEmail(texto)} />
             </View>
             <View style={styles.containerInput}>

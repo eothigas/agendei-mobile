@@ -9,7 +9,7 @@ function Services(props) {
 
     const id_doctor = props.route.params.id_doctor;
     const name = props.route.params.name;
-    const specialty = props.route.params.specialty;
+    const speciality = props.route.params.speciality;
     const iconDoctor = props.route.params.icon;
 
     const [doctorsServices, SetDoctorServices] = useState([]);
@@ -23,11 +23,11 @@ function Services(props) {
 
     async function LoadServices() {
         try {
+
             const response = await api.get("/doctors/" + id_doctor + "/services");
 
             if (response.data)
                 SetDoctorServices(response.data);
-
 
         } catch (error) {
             if (error.response?.data.error)
@@ -46,7 +46,7 @@ function Services(props) {
         <View style={styles.banner}>
             <Image source={iconDoctor == "M" ? icon.male : icon.female} />
             <Text style={styles.name}>{name}</Text>
-            <Text style={styles.specialty}>{specialty}</Text>
+            <Text style={styles.speciality}>{speciality}</Text>
         </View>
 
 

@@ -12,7 +12,7 @@ function Appointment(props) {
         <Text style={styles.name}>
             {props.service} - {props.doctor}
         </Text>
-        <Text style={styles.specialty}>{props.specialty}</Text>
+        <Text style={styles.speciality}>{props.speciality}</Text>
 
         <View style={styles.container}>
 

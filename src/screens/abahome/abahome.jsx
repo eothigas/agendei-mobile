@@ -8,22 +8,23 @@ function AbaHome(props) {
 
     const [doctors, setDoctors] = useState([]);
 
-    function ClickDoctor(id_doctor, name, specialty, icon) {
-        props.navigation.navigate("services", {
+
+    function ClickDoctor(id_doctor, name, speciality, icon){
+        props.navigation.navigate('services', {
             id_doctor,
             name,
-            specialty,
+            speciality,
             icon
         });
     }
 
-    async function LoadDoctors() {
+    async function LoadDoctors(){
         try {
+
             const response = await api.get("/doctors");
 
             if (response.data)
                 setDoctors(response.data);
-
 
         } catch (error) {
             if (error.response?.data.error)
@@ -37,7 +38,6 @@ function AbaHome(props) {
         LoadDoctors();
     }, []);
 
-
     return <View style={styles.container}>
         <Text style={styles.text}>Agende os seus serviços médicos</Text>
 
@@ -48,7 +48,7 @@ function AbaHome(props) {
                 return <Doctor id_doctor={item.id_doctor}
                     name={item.name}
                     icon={item.icon} // M ou F
-                    specialty={item.specialty}
+                    speciality={item.speciality}
                     onPress={ClickDoctor}
                 />
             }} />

@@ -42,42 +42,49 @@ function Schedule(props) {
         }
     }
 
-    return <View style={styles.container}>
-        <View>
-            <Calendar theme={styles.theme}
-                onDayPress={(day) => {
-                    setSelectedDate(day.dateString)
-                }}
-                markedDates={{
-                    [selectedDate]: { selected: true }
-                }}
-
-                minDate={new Date().toDateString()}
-            />
-
+    return (
+        <View style={styles.container}>
             <View>
-                <Text style={styles.textHour}>Horário</Text>
+                <Calendar
+                    theme={styles.theme}
+                    onDayPress={(day) => setSelectedDate(day.dateString)}
+                    markedDates={{
+                        [selectedDate]: { selected: true },
+                    }}
+                    minDate={new Date().toISOString().split("T")[0]}
+                />
+    
+                <View>
+                    <Text style={styles.textHour}>Horário</Text>
+                </View>
+    
+                <View>
+                    <Picker
+                        selectedValue={selectedHour}
+                        onValueChange={(itemValue) => setSelectedHour(itemValue)}
+                    >
+                        <Picker.Item label="Selecione um horário" value="" />
+                        <Picker.Item label="09:00" value="09:00" />
+                        <Picker.Item label="09:30" value="09:30" />
+                        <Picker.Item label="10:00" value="10:00" />
+                    </Picker>
+                </View>
             </View>
-
-
+    
             <View>
-                <Picker selectedValue={selectedHour}
-                    onValueChange={(itemValue, itemIndex) => {
-                        setSelectedHour(itemValue)
-                    }}>
-                    <Picker.Item label="09:00" value="09:00" />
-                    <Picker.Item label="09:30" value="09:30" />
-                    <Picker.Item label="10:00" value="10:00" />
-                </Picker>
+                <Button
+                    text="Confirmar Reserva"
+                    onPress={() => {
+                        if (!selectedDate || !selectedHour) {
+                            Alert.alert("Por favor, selecione uma data e um horário.");
+                            return;
+                        }
+                        ClickBooking();
+                    }}
+                />
             </View>
-
         </View>
-
-        <View>
-            <Button text="Confirmar Reserva" onPress={ClickBooking} />
-        </View>
-
-    </View>
+    );    
 }
 
 export default Schedule;

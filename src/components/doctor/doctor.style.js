@@ -17,7 +17,7 @@ export const styles = {
         color: COLORS.gray1,
         marginTop: 5
     },
-    specialty: {
+    speciality: {
         fontSize: FONT_SIZE.sm,
         color: COLORS.gray3
     },
