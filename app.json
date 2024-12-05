@@ -22,7 +22,8 @@
       "package": "com.thiagofreitas.agendeimobile",
       "permissions": [
         "INTERNET"
-      ]
+      ],
+      "useCleartextTraffic": true
     },
     "web": {
       "favicon": "./assets/favicon.ico"
